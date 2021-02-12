@@ -1,0 +1,135 @@
+{
+	"info": {
+		"_postman_id": "fd575940-a01e-4194-9566-8de929370fec",
+		"name": "todo-list-api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create TODO list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Groceries\",\r\n    \"description\": \"shopping list\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vb93flt8m0.execute-api.us-east-2.amazonaws.com/prod/list/create",
+					"protocol": "https",
+					"host": [
+						"vb93flt8m0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"list",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add TODO item",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"apples\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vb93flt8m0.execute-api.us-east-2.amazonaws.com/prod/list/Groceries/item",
+					"protocol": "https",
+					"host": [
+						"vb93flt8m0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"list",
+						"Groceries",
+						"item"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get TODO items",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://vb93flt8m0.execute-api.us-east-2.amazonaws.com/prod/list/Groceries/get-items",
+					"protocol": "https",
+					"host": [
+						"vb93flt8m0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"list",
+						"Groceries",
+						"get-items"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete TODO item",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"apples\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://vb93flt8m0.execute-api.us-east-2.amazonaws.com/prod/list/Groceries/item",
+					"protocol": "https",
+					"host": [
+						"vb93flt8m0",
+						"execute-api",
+						"us-east-2",
+						"amazonaws",
+						"com"
+					],
+					"path": [
+						"prod",
+						"list",
+						"Groceries",
+						"item"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
