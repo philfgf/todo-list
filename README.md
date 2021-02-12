@@ -22,3 +22,5 @@ GET /list/{list_name}/get-items - {description} <br />
 
 Postman Link: https://github.com/philfgf/todo-list/blob/main/todo-list-api.postman_collection.json <br />
 
+![alt text](https://github.com/philfgf/todo-list/blob/main/gateway%20%20methods.PNG)
+
